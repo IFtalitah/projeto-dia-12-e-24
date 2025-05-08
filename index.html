@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Pesquisa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Título -->
+    <h1 id="title">Formulário de Pesquisa</h1>
+    
+    <!-- Descrição -->
+    <p id="description">Preencha o formulário abaixo para enviar suas informações. Todos os campos são obrigatórios.</p>
+    
+    <!-- Formulário -->
+    <form id="survey-form">
+      
+      <!-- Campo de Nome -->
+      <label for="name" id="name-label">Nome:</label>
+      <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+      <!-- Campo de E-mail -->
+      <label for="email" id="email-label">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <!-- Campo de Número -->
+      <label for="number" id="number-label">Idade:</label>
+      <input type="number" id="number" name="age" placeholder="Digite sua idade" min="18" max="100" required>
+
+      <!-- Seleção Dropdown -->
+      <label for="dropdown">Escolha uma opção:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="option1">Opção 1</option>
+        <option value="option2">Opção 2</option>
+      </select>
+
+      <!-- Botões de Rádio -->
+      <fieldset>
+        <legend>Qual sua preferência?</legend>
+        <label>
+          <input type="radio" name="preference" value="pref1" required> Preferência 1
+        </label>
+        <label>
+          <input type="radio" name="preference" value="pref2"> Preferência 2
+        </label>
+      </fieldset>
+
+      <!-- Caixas de Seleção -->
+      <label for="checkboxes">Selecione seus interesses:</label>
+      <label>
+        <input type="checkbox" name="interest" value="interest1"> Interesse 1
+      </label>
+      <label>
+        <input type="checkbox" name="interest" value="interest2"> Interesse 2
+      </label>
+      <label>
+        <input type="checkbox" name="interest" value="interest3"> Interesse 3
+      </label>
+
+      <!-- Campo de Comentários -->
+      <label for="comments">Comentários adicionais:</label>
+      <textarea id="comments" name="comments" placeholder="Deixe um comentário..."></textarea>
+
+      <!-- Botão de Envio -->
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
